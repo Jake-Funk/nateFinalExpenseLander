@@ -1,0 +1,148 @@
+/* Entire Page styles */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Ubuntu", sans-serif;
+    background-color: #f9fcff;
+}
+#loadOverlay{display: none;}
+
+
+/* Header Banner styles */
+.banner {
+    background: #002448;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bannerimg {
+    width: min(350px, 90vw);
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.callButton {
+    background-color: white;
+    padding: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    margin: 20px;
+}
+.callButton a {
+    text-decoration: none;
+    color: #002448;
+    font-size: 20px;
+}
+.phoneIcon {
+    display:  none;
+    padding: 10px;
+    color: white;
+}
+
+/* Page Content Styles */
+.content {
+    background-image: url("assests/footerGraphics.png")/*#f9fcff*/;
+    background-position: 0px -100px;
+    min-height: 800px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content * {
+    max-width: 750px;
+}
+
+.multiStepForm {
+    position: relative;
+}
+
+.content h1, .content h3 {
+    text-align: center;
+}
+.content h1 {
+    color: #002448;
+}
+.content h3 {
+    margin-bottom: 0;
+}
+
+
+
+.callBtn{
+    width: 90vw;
+    background: hsl(210, 100%, 90%);
+    border: 2px solid #002448;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 5vw;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer; 
+    transition: .4s;
+    color: #002448;
+}
+.callBtn span {
+    font-size: 5vw;
+}
+.callBtn * {
+    padding: 0px 10px;
+}
+
+.callBtn:hover {
+    background: hsl(210, 100%, 85%);
+    box-shadow: 0px 0px 5px 2px hsl(210, 100%, 25%);
+}
+
+@media screen and (min-width: 1400px) {
+    .callBtn {
+       font-size: 78px;
+    }
+    .callBtn span {
+        font-size: 78px;
+    }
+  }
+
+/* Footer styles */
+.footer {
+    background-color: #002448;
+}
+
+.footerimgcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.footerimg {
+    width: min(50vw, 250px);
+    padding: 30px;
+}
+
+
+.legalInfo {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    flex-wrap: wrap;
+}
+.legalInfo div {
+    margin: 20px;
+}
+.footer p {
+    padding: 20px; 
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.hide {
+    display: none;
+}
