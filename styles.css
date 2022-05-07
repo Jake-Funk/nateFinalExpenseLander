@@ -73,8 +73,6 @@ body {
     margin-bottom: 0;
 }
 
-
-
 .callBtn{
     width: 90vw;
     background: hsl(210, 100%, 90%);
@@ -84,14 +82,14 @@ body {
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    font-size: 5vw;
+    font-size: 6vw;
     font-family: 'Ubuntu', sans-serif;
     cursor: pointer; 
     transition: .4s;
     color: #002448;
 }
 .callBtn span {
-    font-size: 5vw;
+    font-size: 6vw;
 }
 .callBtn * {
     padding: 0px 10px;
@@ -102,14 +100,40 @@ body {
     box-shadow: 0px 0px 5px 2px hsl(210, 100%, 25%);
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1300px) {
     .callBtn {
        font-size: 78px;
     }
     .callBtn span {
         font-size: 78px;
     }
-  }
+}
+
+@media screen and (min-width: 350px) {
+    .callBtn {
+        padding: 50px 0px;
+        font-size: 35px;
+    }
+    .callBtn span {
+        font-size: 35px;
+    }
+    .content {
+        min-height: 1000px;
+        background-position: 0px 70px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .callBtn {
+        padding: 10px 20px;
+        font-size: 6vw;
+    }
+    .callBtn span {
+        font-size: 6vw;
+    }
+}
+
+
 
 /* Footer styles */
 .footer {
